@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fdecea;
+  color: #333;
+  line-height: 1.6;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff0783;
+}
+
+.container {
+  max-width: 1400px; /* Increased from 1200px */
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Navigation */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0; /* Increased padding */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* Increased gap */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 18px; /* Slightly larger font */
+}
+
+nav ul li a:hover {
+  color: #ff6f91;
+}
+
+/* Sections */
+section {
+  min-height: 110vh; /* Increased from 100vh */
+  display: flex;
+  align-items: center;
+  padding-top: 100px; /* Increased top padding */
+}
+
+/* Home Section */
+#home {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.home-content h1 {
+  font-size: 48px; /* Increased from 42px */
+  margin-bottom: 30px; /* Increased margin */
+  color: #333;
+}
+
+.home-content p {
+  font-size: 20px; /* Slightly larger text */
+  margin-bottom: 20px;
+}
+
+.home-avatar {
+  width: 550px; /* Slightly increased */
+  height: 550px; /* Slightly increased */
+  border-radius: 50%;
+  background-image: url("img/anggi.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 12px dotted #ff6f91;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+  margin-top: 30px; /* Increased margin */
+  display: flex;
+  gap: 20px; /* Increased gap */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px; /* Increased padding */
+  background-color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a:hover {
+  background-color: #ff6f91;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* About Me Section */
+#about {
+  background-color: #ffffff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 40px; /* Increased from 32px */
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 20px; /* Slightly larger text */
+  margin-bottom: 20px;
+  
+}
+
+/* Hobbies Section */
+#hobbies {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+#hobbies h2 {
+  font-size: 40px; /* Increased from previous size */
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.hobbies-grid {
+  display: flex; /* Changed from grid to flex */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hobby-card {
+  flex-basis: calc(33.333% - 30px); /* Responsive flex sizing */
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-10px);
+}
+
+.hobby-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.hobby-card p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Contact Section */
+/* Updated Contact Section Styles */
+#contact {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #333;
+  position: relative;
+}
+
+#contact h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #ff6f91;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-links a:hover {
+  background-color: #ff6f91;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* footer */
+footer {
+  background-color: #fdecea;
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 16px;
+  border-top: 2px solid #ff6f91;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before,
+footer::after {
+  content: "✿";
+  position: absolute;
+  color: #ff6f91;
+  font-size: 24px;
+  opacity: 0.3;
+}
+
+footer::before {
+  left: 10%;
+  top: 20%;
+  transform: rotate(-20deg);
+}
+
+footer::after {
+  right: 10%;
+  bottom: 20%;
+  transform: rotate(20deg);
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-links a {
+    width: 250px;
+    justify-content: center;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .home-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hobbies-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobby-card {
+    flex-basis: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-avatar {
+    width: 350px;
+    height: 350px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #666;
+    margin-top: 20px;
+  }
+}
